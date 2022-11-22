@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class Start {
 
     Set<Edge> edges;
-    int n = 5000;
+    int n = 1000;
     int m = n * (n - 1) / 2;
     int s = 1;
     int t = n;
@@ -49,8 +49,6 @@ public class Start {
         Main.main(args);
     }
 
-
-    @Benchmark
     public int correctSol() {
         if (s == t)
             return 0;
